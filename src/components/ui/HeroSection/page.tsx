@@ -2,7 +2,7 @@ import HeroBgGradientClient from "./HeroBgGradient.Client";
 import { LinkItem } from "../LinkItem/page";
 import { TiSocialGithubCircular } from "react-icons/ti";
 
-export default () => {
+export default function HeroSection(){
   return (
     <section className="custom-screen mt-20">
       <div className="relative z-10 max-w-2xl mx-auto space-y-4 text-center">

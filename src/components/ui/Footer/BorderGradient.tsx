@@ -1,6 +1,7 @@
 import mergeTW from "@/utils/mergeTW";
 
-export default ({ className = "" }: { className: string }) => (
+export default function BorderGradient({ className = "" }: { className: string }){
+  return(
   <svg
     width="755"
     height="3"
@@ -24,4 +25,4 @@ export default ({ className = "" }: { className: string }) => (
       </radialGradient>
     </defs>
   </svg>
-);
+)};

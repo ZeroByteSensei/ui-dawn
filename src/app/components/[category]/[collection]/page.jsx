@@ -18,10 +18,10 @@ const mdxComponents = {
 
 const componentsDirectory = join(process.cwd(), '/src/content/components')
 
-export async function generateMetadata({ params }:{params:any}) {
+export async function generateMetadata({ params }) {
   const { collectionData } = await getCollection(params)
   
-  // console.log(collectionData, "data here")
+  console.log(collectionData, "data here")
 
   return {
     title: `Tailwind CSS ${collectionData.seo.title} | HyperUI`,
@@ -43,7 +43,7 @@ export async function generateStaticParams() {
   return await fs.readdir(componentsDirectory)
 }
 
-async function getCollection(params:any) {
+async function getCollection(params) {
   try {
     const componentPath = join(componentsDirectory, `${params.category}-${params.collection}.mdx`)
 
@@ -74,7 +74,7 @@ async function getCollection(params:any) {
   }
 }
 
-export default async function Page({ params }:{params:any}) {
+export default async function Page({ params }) {
   const { collectionData, collectionContent } = await getCollection(params)
 
   // console.log(collectionContent, "collecData here!")

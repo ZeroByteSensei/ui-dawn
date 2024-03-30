@@ -24,8 +24,10 @@ const members = [
   },
 ];
 
-export default () => (
-  <div className="flex-1 max-w-lg mx-auto p-6 rounded-2xl bg-[#18181B]/75 hidden md:block">
+export default function PreviewCard(){
+
+  return(
+    <div className="flex-1 max-w-lg mx-auto p-6 rounded-2xl bg-[#18181B]/75 hidden md:block">
     <div className="items-start justify-between sm:flex">
       <div>
         <h3 className="text-zinc-100 text-lg font-semibold">Team members</h3>
@@ -48,7 +50,7 @@ export default () => (
               width={48}
               height={48}
               alt=""
-            />
+              />
             <div className="text-sm">
               <span className="block text-zinc-100 font-semibold">
                 {item.name}
@@ -61,3 +63,4 @@ export default () => (
     </ul>
   </div>
 );
+} 

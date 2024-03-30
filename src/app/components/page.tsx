@@ -24,7 +24,7 @@ export const metadata = {
   },
 };
 
-export default async () => {
+export default async  function Component() {
   const markdownWithMeta = fs.readFileSync(
     path.join(process.cwd(), "src/content/intro.mdx"),
     "utf-8"

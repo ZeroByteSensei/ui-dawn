@@ -7,7 +7,7 @@ import { FaXmark } from "react-icons/fa6";
 import { BiArrowBack } from "react-icons/bi";
 import { LinkItem } from "../LinkItem/page";
 
-export default () => {
+export default function NavbarComp() {
   const [state, setState] = useState(false);
   const [isNewsletterModalActive, setNewsletterModalActive] = useState(false);
 

@@ -1,9 +1,9 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Navbar from "./Navbar";
+import NavbarComp from "./NavbarComp";
 
-export default () => {
+export default function Navbar() {
   const pathname = usePathname();
   const isInComponentsPage = pathname.includes("/components");
   return (
@@ -14,7 +14,7 @@ export default () => {
           : ""
       }
     >
-      <Navbar />
+      <NavbarComp />
     </div>
   );
 };

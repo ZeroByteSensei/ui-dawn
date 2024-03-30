@@ -3,7 +3,7 @@
 import { ReactNode, useRef } from "react";
 import Image from "next/image";
 
-export default ({
+export default function FeatureCards ({
   icon,
   title,
   desc,
@@ -11,7 +11,7 @@ export default ({
   icon: ReactNode;
   title: string;
   desc: string;
-}) => {
+}){
   const cardRef = useRef<HTMLLIElement>(null);
   const shadowRef = useRef<HTMLDivElement>(null);
 

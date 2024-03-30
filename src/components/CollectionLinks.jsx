@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import { join } from 'path'
 import { promises as fs } from 'fs'
 
-import ButtonStyle from '@/components/ui/ButtonStyle'
+import ButtonStyle from '@/components/ButtonStyle'
 
 async function getComponents() {
   const componentsPath = join(process.cwd(), '/src/content/components')

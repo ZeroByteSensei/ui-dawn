@@ -18,7 +18,7 @@ type Props = {
   children: ReactNode;
 };
 
-export default (props: Props) => {
+export default function CompLayout(props: Props) {
   const { children } = props;
   return (
     <main className="relative custom-screen-lg">

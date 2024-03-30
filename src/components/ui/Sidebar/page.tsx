@@ -5,9 +5,9 @@ import { MouseEventHandler, ReactNode, useEffect, useState } from "react";
 import NavLink from "./NavLink";
 import { usePathname } from "next/navigation";
 import mergeTW from "@/utils/mergeTW";
-import Input from "@/components/input";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { BiChevronRight } from "react-icons/bi";
+import Input from "@/components/InputComp";
 
 const Heading = ({ children }: { children: ReactNode }) => (
   <h3 className="pb-6 font-medium text-zinc-50">{children}</h3>
@@ -30,7 +30,7 @@ const NavList = ({
   </ul>
 );
 
-export default () => {
+export default function Sidebar(){
   const [isOpen, setOpen] = useState<boolean>(false);
   const [searchValue, setSearchValue] = useState<string>("");
   const [searchResults, setSearchResults] = useState<

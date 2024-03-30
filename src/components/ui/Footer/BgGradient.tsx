@@ -1,6 +1,7 @@
 import mergeTW from "@/utils/mergeTW";
 
-export default ({ className = "" }: { className: string }) => (
+export default function BgGradient ({ className = "" }: { className: string }) {
+  return(
   <svg
     width="675"
     height="251"
@@ -51,4 +52,4 @@ export default ({ className = "" }: { className: string }) => (
       </linearGradient>
     </defs>
   </svg>
-);
+)};

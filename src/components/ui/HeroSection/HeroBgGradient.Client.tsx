@@ -4,7 +4,7 @@ import HeroBgGradient from "@/components/HeroBgGradient";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-export default () => {
+export default function HeroBgGradientClient () {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (

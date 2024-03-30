@@ -1,12 +1,8 @@
 import mergeTW from "@/utils/mergeTW";
 
-export default ({
-  className = "",
-  height = 444,
-}: {
-  className?: string;
-  height?: number;
-}) => (
+export default function HeroBgGredient({className = "", height = 444,}: {
+  className?: string; height?: number;}) {
+    return (
   <svg
     height={height}
     viewBox="0 0 653 444"
@@ -59,4 +55,4 @@ export default ({
       </linearGradient>
     </defs>
   </svg>
-);
+)};

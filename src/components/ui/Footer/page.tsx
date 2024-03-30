@@ -1,10 +1,10 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Footer from "./Footer";
+import FooterComp from "./FooterComp";
 
-export default () => {
+export default function Footer() {
   const pathname = usePathname();
   const isInComponentsPage = pathname.includes("/components");
-  return !isInComponentsPage ? <Footer /> : <></>;
+  return !isInComponentsPage ? <FooterComp /> : <></>;
 };

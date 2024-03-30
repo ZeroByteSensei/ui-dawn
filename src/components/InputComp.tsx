@@ -12,11 +12,15 @@ interface Props extends HTMLAttributes<HTMLInputElement> {
   autoFocus?: boolean;
 }
 
-export default ({ className, required, validate, ...props }: Props) => (
-  <input
+const Input = ({ className, required, validate, ...props }: Props) => {
+  return ( 
+    <input
     {...props}
     className={mergeTW(
       `px-3 py-2 bg-zinc-800/70 hover:bg-zinc-800/40 focus:bg-zinc-800/40 text-sm text-zinc-300 placeholder-zinc-500 outline-none border border-zinc-800 focus:border-zinc-600 shadow-sm rounded-lg duration-200 ${className}`
     )}
   ></input>
-);
+   );
+}
+ 
+export default Input;
