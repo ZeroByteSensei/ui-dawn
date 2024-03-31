@@ -43,7 +43,7 @@ export default function Sidebar(){
     (item: { category: string }) => item.category == "application-ui"
   );
   const marketingUISections = sections.filter(
-    (item: { category: string }) => item.category == "Marketing"
+    (item: { category: string }) => item.category == "marketing-ui"
   );
 
   useEffect(() => {

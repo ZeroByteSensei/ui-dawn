@@ -60,7 +60,7 @@ async function getCollection(params) {
       },
       scope: frontmatter,
     })
-    // console.log(mdxSource, "compopath2")
+    console.log(mdxSource, "compopath2")
 
     return {
       collectionData: {

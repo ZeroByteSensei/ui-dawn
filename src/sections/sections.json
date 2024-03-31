@@ -10,7 +10,7 @@
       "isNew": false
     },
     {
-      "category": "Marketing",
+      "category": "marketing-ui",
       "slug": "/banners",
       "description": "Beautifully designed, fully responsive, expertly crafted banner examples",
       "count": 5,
@@ -21,7 +21,7 @@
     },
     {
       "cover_url": "CTA-Section.png",
-      "category": "Marketing",
+      "category": "marketing-ui",
       "id": "0fb7f422-029c-4eff-914d-cf228942b180",
       "description": "Beautifully designed, fully responsive, expertly crafted CTA section examples",
       "slug": "/cta-sections",
@@ -64,7 +64,7 @@
       "slug": "/team-sections",
       "section_name": "Team Sections",
       "id": "647d4652-e28b-4ef2-95a7-0ce7754288fe",
-      "category": "Marketing",
+      "category": "marketing-ui",
       "description": "Beautifully designed, fully responsive, expertly crafted team section examples",
       "count": 6,
       "isNew": false
@@ -75,7 +75,7 @@
       "description": "Beautifully designed, fully responsive, expertly crafted contact section examples",
       "section_name": "Contact Sections",
       "count": 6,
-      "category": "Marketing",
+      "category": "marketing-ui",
       "slug": "/contact-sections",
       "isNew": false
     },
@@ -85,7 +85,7 @@
       "slug": "/footers",
       "section_name": "Footers",
       "description": "Beautifully designed, fully responsive, expertly crafted footer examples",
-      "category": "Marketing",
+      "category": "marketing-ui",
       "id": "72b0c352-089f-49db-a6ab-2464eb2fddbb",
       "isNew": false
     },
@@ -122,7 +122,7 @@
     {
       "count": 5,
       "cover_url": "Logo.png",
-      "category": "Marketing",
+      "category": "marketing-ui",
       "slug": "/logo-grid",
       "section_name": "Logo Grid",
       "description": "Beautifully designed, fully responsive, expertly crafted logo grid examples",
@@ -140,7 +140,7 @@
       "isNew": false
     },
     {
-      "category": "Marketing",
+      "category": "marketing-ui",
       "count": 5,
       "slug": "/404-pages",
       "description": "Beautifully designed, fully responsive, expertly crafted 404 page examples",
@@ -161,7 +161,7 @@
     },
     {
       "cover_url": "Heroes.png",
-      "category": "Marketing",
+      "category": "marketing-ui",
       "section_name": "Hero Sections",
       "count": 8,
       "id": "ba30d2fb-f398-4f91-8cfa-e4a84b386841",
@@ -171,7 +171,7 @@
     },
     {
       "slug": "/faqs",
-      "category": "Marketing",
+      "category": "marketing-ui",
       "count": 7,
       "cover_url": "FAQS.png",
       "id": "6713a1de-e75b-4337-a498-5e078ae0dd02",
@@ -182,7 +182,7 @@
     {
       "cover_url": "Feature.png",
       "id": "8f9ceb0d-94f9-4752-b004-ff6a7a07bb20",
-      "category": "Marketing",
+      "category": "marketing-ui",
       "slug": "/feature-sections",
       "count": 8,
       "description": "Beautifully designed, fully responsive, expertly crafted feature section examples",
@@ -190,7 +190,7 @@
       "isNew": false
     },
     {
-      "category": "Marketing",
+      "category": "marketing-ui",
       "id": "51567610-2a3c-4f04-8f42-55fd5cc89e80",
       "description": "Beautifully designed, fully responsive, expertly crafted pricing section examples",
       "slug": "/pricing-sections",
@@ -212,7 +212,7 @@
     {
       "section_name": "Testimonials",
       "description": "Beautifully designed, fully responsive, expertly crafted testimonial examples",
-      "category": "Marketing",
+      "category": "marketing-ui",
       "cover_url": "Testimonial.png",
       "count": 6,
       "id": "bde3a575-1d44-4ecf-b9f6-8c32aa2adecf",
@@ -241,7 +241,7 @@
     },
     {
       "cover_url": "Stats.png",
-      "category": "Marketing",
+      "category": "marketing-ui",
       "description": "Beautifully designed, fully responsive, expertly crafted stat examples",
       "slug": "/stats",
       "id": "985029d3-8f34-4c36-a960-3b00be079226",
@@ -261,7 +261,7 @@
     },
     {
       "slug": "/newsletters",
-      "category": "Marketing",
+      "category": "marketing-ui",
       "count": 6,
       "section_name": "Newsletter Sections",
       "description": "Beautifully designed, fully responsive, expertly crafted Newsletter examples",

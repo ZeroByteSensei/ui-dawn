@@ -1,5 +1,3 @@
-
-
 import { useEffect, useRef, useState } from 'react'
 
 import { useInView } from 'react-intersection-observer'
@@ -33,7 +31,6 @@ export default function ComponentPreview({ componentData, componentContainer }) 
   const [previewWidth, setPreviewWidth] = useState('100%')
   const [showPreview, setShowPreview] = useState(true)
 
-
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
@@ -61,10 +58,10 @@ export default function ComponentPreview({ componentData, componentContainer }) 
         useDark: isDarkMode,
       })
     }
-    
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView])
-  
+
   useEffect(() => {
     if (inView) {
       fetchHtml({
@@ -72,11 +69,10 @@ export default function ComponentPreview({ componentData, componentContainer }) 
         useInteractive: isInteractive,
       })
     }
-    
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isDarkMode, isInteractive])
-  
-  console.log("inside compoprev, useeffect")
+
   useEffect(() => {
     if (inView) {
       const transformedHtml = componentPreviewHtml(
@@ -112,10 +108,6 @@ export default function ComponentPreview({ componentData, componentContainer }) 
 
     const componentUrl = `/components/${componentCategory}-${componentSlug}/${componentPath}.html`
 
-    console.log(componentUrl, "url here")
-    console.log("Inside the compoPreview")
-
-
     const fetchResponse = await fetch(componentUrl)
     const textResponse = await fetchResponse.text()
     const transformedHtml = componentPreviewHtml(
@@ -136,10 +128,26 @@ export default function ComponentPreview({ componentData, componentContainer }) 
 
   return (
     <div ref={ref} id={componentHash}>
-      <div className="space-y-4 bg-red-400">
+      <div className="space-y-4">
         <PreviewTitle componentTitle={componentTitle} componentHash={componentHash} />
 
         <div className="lg:flex lg:items-end">
+
+          <div className="hidden lg:flex lg:flex-1 lg:items-start lg:justify-start lg:gap-4">
+            {componentBreakpoints.map(
+              ({ name: breakpointName, emoji: breakpointEmoji, width: breakpointWidth }) => (
+                <PreviewBreakpoint
+                  key={breakpointName}
+                  breakpointText={breakpointName}
+                  breakpointEmoji={breakpointEmoji}
+                  breakpointWidth={breakpointWidth}
+                  handleSetPreviewWidth={setPreviewWidth}
+                  breakpointActive={previewWidth === breakpointWidth}
+                />
+              )
+            )}
+          </div>
+
           {componentCode && (
             <div className="flex flex-wrap items-end gap-4">
               <PreviewView handleSetShowPreview={setShowPreview} showPreview={showPreview} />
@@ -157,24 +165,9 @@ export default function ComponentPreview({ componentData, componentContainer }) 
                 />
               )}
 
-              <PreviewRtl isRtl={isRtl} handleSetIsRtl={setIsRtl} />
+              {/* <PreviewRtl isRtl={isRtl} handleSetIsRtl={setIsRtl} /> */}
             </div>
           )}
-
-          <div className="hidden lg:flex lg:flex-1 lg:items-end lg:justify-end lg:gap-4">
-            {componentBreakpoints.map(
-              ({ name: breakpointName, emoji: breakpointEmoji, width: breakpointWidth }) => (
-                <PreviewBreakpoint
-                  key={breakpointName}
-                  breakpointText={breakpointName}
-                  breakpointEmoji={breakpointEmoji}
-                  breakpointWidth={breakpointWidth}
-                  handleSetPreviewWidth={setPreviewWidth}
-                  breakpointActive={previewWidth === breakpointWidth}
-                />
-              )
-            )}
-          </div>
         </div>
 
         <div className="relative">

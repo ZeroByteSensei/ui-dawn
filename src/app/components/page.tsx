@@ -37,7 +37,6 @@ export default async  function Component() {
       <article className="prose prose-invert max-w-7xl">
         <MDXRemoteClient
           mdxSource={{ ...mdxSource }}
-          
         />
       </article>
     </>

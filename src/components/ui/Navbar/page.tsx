@@ -10,8 +10,8 @@ export default function Navbar() {
     <div
       className={
         isInComponentsPage
-          ? "sticky z-50 top-0 bg-zinc-950 border-zinc-800 xl:border-b"
-          : ""
+          ? "sticky z-50 top-0 p-4 bg-zinc-950 border-zinc-800 xl:border-b"
+          : "pt-4 px-6"
       }
     >
       <NavbarComp />
